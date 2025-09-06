@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="form">
+    <label for="isim1" id="isim">isminiz</label>
+    <input type="text" id="isim1">
+    <button id="kaydedici"> kaydet</button>
+    <button id="yazdirici">yazdır</button>
+
+    <label for="yas1" id="yas" >yaşınız</label>
+    <input type="text" id="yas1" placeholder="gerekli değil(isteğe bağlı)">
+
+    <label for="firma1" id="firma">firmanızın isimi</label>
+    <input type="text" id="firma1">
+
+    <label for="sifre">şifreniz</label>
+    <input type="password" id="sifre">
+
+    <label for="doğrulama">tekrar gşrn</label>
+    <input type="password" id="doğrulama">
+     <button id="tkrdoğrulama">doğrumaiçn</button>
+    </div>
+    <div id="sonuc1"></div>
+    <a href="index.html">
+          <button id="giris">giriş</button> 
+    </a>
+    <style>
+        #sifre{
+            background-color: #9FBCF5;
+            color: white;
+            border-radius: 15px;
+            height: 40px;
+            width: 100px;
+            border: solid gray 2px;
+        }
+        #giris{
+           background-color: black;
+           border: solid gray 3px;
+           border-radius: 15px;
+           height: 40px;
+           width: 80px;
+           border: none;
+           display: block;
+           color: white;
+           top: 240px;
+           right: 10px;
+           position: absolute;
+        }
+        #firma1{
+            background-color: #9FBCF5;
+            border-radius: 15px;
+            border: solid black 3px;
+            width: 100px;
+            height: 30px;
+            bottom: 5px;
+            top: 7px;
+        }
+        #form{
+            background-color: #9FBCF5;
+            border-radius: 15px;
+            border: solid 5px black;
+            height: 220px;
+            width: 440px;
+            float: right;
+            margin-bottom: 20px;
+            right: 500px;
+        }
+        html{
+            background-color: #F5DEE9;
+        }
+        #isim1{
+            background-color: gray;
+            border: solid black 2px;
+            border-radius: 15px;
+            height: 50px;
+            width: 100px;
+            padding: 3px;
+            margin-top: 15px;
+        }
+        #yas1{
+            margin-top: 15px;
+            background-color: gray;
+            border: solid black 2px;
+            border-radius: 15px;
+            height: 50px;
+            width: 100px;
+            padding: 3px;
+        }
+        #sonuc1{
+            background-color: #CCB7B8;
+            border: solid gray 2px;
+            height: 60px;
+            width: 200px;
+            margin-right: 55px;
+            right: 5px;
+            bottom: 5px;
+            border-radius: 15px;
+            color: white;
+             }
+        #yazdirici{
+            background-color: #9FBCF5;
+            border: solid gray 2px;
+            border-radius: 15px;
+            height: 25px;
+            width: 60px;
+        }
+        #kaydedici{
+            background-color: #9FBCF5;
+            border: solid gray 2px;
+            height: 25px;
+            width: 60px;
+            border-radius: 15px;
+        }
+      
+    
+    </style>
+    <script>
+     document.addEventListener("DOMContentLoaded", function() {
+  document.getElementById("yazdirici").addEventListener("click",function(a){
+    a.preventDefault();
+    let isim1 = document.getElementById("isim1").value;
+    let yas1 = document.getElementById("yas1").value;
+    let firma1 = document.getElementById("firma1").value;
+    document.getElementById("sonuc1").innerHTML =
+     "hoş geldin  "  + " " +  isim1+ " " + "hedef" + " "+ firma1 +" "+ "hdefine sana başarılardileriz";
+});
+     
+ });
+
+function tiklama (){
+    alert("tebrikler liveworld ekayıt yaparak ilk girşini yaptın");
+}
+
+
+     
+document.getElementById("sifre").value
+document.getElementById("doğrulama").value;
+document.getElementById("tkrdoğrulama").addEventListener("click",function(){
+if (sifre === doğrulama){
+alert("tebriklerşifredoğru giriş yapın")
+}else{
+    alert("şifre yanlış tekrar deneyin")
+}
+});
+
+    
+    </script>
+</body>
+</html>
