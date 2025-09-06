@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="başlik">RENİUM</h1>
+    <div class="buttonlar">
+        <a href="liveworld2.html">
+            <button title="liveworld" class="geçiş">LW</button>
+        </a>
+        <button class="hesap"> kişi kaydetme</button>
+        
+    </div>
+    <style>
+        html{
+            background-color: #F9FFAB;
+        }
+        .başlik{
+            text-align: center;
+        }
+        .buttonlar{
+            background-color: #00A396;
+            height: 80px;
+            border-radius: 15px;
+            border: 2px black solid;
+            margin-top: 15px;
+
+        }
+        .geçiş{
+            background-color: #BAAC91;
+            border-radius: 100px;
+            height: 60px;
+            color:aqua;
+            border: 2px darkblue solid;
+            float: right;
+            width: 60px;
+            margin-top: 2px;
+        }
+        .hesap{
+            background-color: #BAAC91;
+            border-radius: 15px;
+            border:2px black solid;
+            float: right;
+            height: 40px;
+            width: 75px;
+            margin-right: 10px;
+            margin-top: 5px;
+        }
+        #isim{
+            background-color: #DBC7FF;
+            border-radius: 15px;
+            border:2px black solid;
+            height: 45px;
+            width: 100px;
+            margin-top: 15px; 
+        }
+        #yaş{
+            background-color: #DBC7FF;
+            border-radius: 15px;
+            border:2px black;
+            height: 45px;
+            width: 100px;
+            margin-top: 15px;
+        }
+        #ekran{
+            background-color: aqua;
+            height: 30px;
+            width: 350px;
+            border-radius: 15px;
+            border:2px black solid;
+            margin-top: 15px;
+        }
+        #veri_açikla{
+        background-color: #DBC7FF;
+        border-radius: 15px;
+        height: 30px;
+        width: 50px;
+
+        }
+        #yorum_yapma{
+            background-color:blue;
+            color:white;
+            border-radius: 15px;
+            border:2px black solid ;
+            height: 200px;
+            width: 320px;
+            margin-top: 15px;
+            margin-left: 15px;
+        }
+        #yorum{
+            background-color: darkblue;
+            border-radius: 15px;
+            height: 45px;
+            width: 280px;
+            border:2px black solid;
+        }
+        #kaydet{
+            background-color: darkblue;
+            border-radius: 15px;
+            height: 25px;
+            width: 70px;
+            border:2px black solid ;
+            margin-left: 15px;
+        }
+        #başkan_notu{
+            background-color: #00A396;
+            color: aqua;
+            height: 75px;
+            width: 210px;
+            border-radius: 15px;
+            border:2px black solid;
+            margin-top: 15px;
+            margin-left: 15px;
+        }
+        #not{
+            background-color: #DBC7FF;
+            color: black;
+            border-radius: 15px;
+            height: 25px;
+            width: 65px;
+            border:1px black solid;
+        }
+        #kaydet1{
+        background-color:#BAAC91;
+        color: aqua;
+        border-radius: 15px;
+        height: 45px;
+        width: 80px;
+        border:2px black solid ; 
+        }
+        #sayi{
+            background-color: #00A396;
+           
+          
+        }
+        #numara{
+            background-color: #00A396;
+            border:1px black solid;
+            height: 85px;
+            width: 250px;
+            float: right;
+            margin-top: 50px;
+            position: absolute;
+            top: 150px;
+            right: 25px;
+            border-radius: 15px;
+
+        }
+        #sonuc2{
+            background-color: black;
+            color: white;
+            height: 50px;
+            width: 100px;
+            border-radius: 15px;
+        }
+        #merhaba{
+            color: black;
+        }
+    </style>
+    <form action="">
+    <label for="isim">ADINIZ:</label>
+    <input type="text" id="isim">
+
+    <label for="yaş">YAŞINIZ:</label>
+    <input type="text" id="yaş">
+
+    <button type="button" id="veri_açikla">açıkla</button>
+
+    <div id="ekran">
+
+    </div>
+    </form>
+    <div id="yorum_yapma">
+        <p> Web sitemiz hakkında  yorumla rınız bizim için değerli lütfen yorumunuzu girin</p>
+        <textarea  id="yorum" title="yarumunuzu buraya girin "></textarea>
+        <button id="kaydet">kaydet</button>
+
+    </div>
+    <div id="başkan_notu">
+        <input type="text " id="not">
+        <button id="kaydet1">kaydet</button>
+    </div>
+ 
+       
+<button id="lll">yazdır</button>
+<div id="ekran3"></div>
+
+    <script>
+      document.getElementById("kaydet1").addEventListener("click", function(){
+    let not = document.getElementById("not").value;
+    localStorage.setItem("kullanıcı notu", not); 
+    alert("Not kaydedildi!");
+});
+
+window.onload = function() {
+    let not = localStorage.getItem("kullanıcı notu");
+    if(not){
+        document.getElementById("not").value = not;
+    }
+}
+
+
+document.getElementById("veri_açikla").addEventListener("click", function(e){
+    e.preventDefault();
+    let isim = document.getElementById("isim").value;
+    let yaş = document.getElementById("yaş").value;
+     document.getElementById("ekran").innerHTML = "sizin adnız " + isim + "yaşınız " + yaş ;
+})
+
+
+  
+
+
+
+    </script>
+    <div id="numara">
+        <p>Aşağıda numarayı arayarak destek oparetörrlerimize ulaşabilirisiniz</p>
+        <div id="sayi">
+            502 252 63 52
+
+        </div>
+
+    </div>
+</body>
+</html>
