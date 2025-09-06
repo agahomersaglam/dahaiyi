@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<div id="btn">
+    <a href="index.html">
+         <button id="rnm">R</button>
+    </a>
+    <button id="ayarlar_butonu">ayarlar</button>
+</div>
+
+
+<div id="ayar_butonu">
+ <button class="renk">renk</button>
+<button class="ürn_kaydetme">ürün kaydetme</button>
+</div>
+<div id="alan">
+    <h2 id="yazi">NASIL KENDİ LİVEWORLD SAYFAMI ÖZELLEŞTİREBİLİRİM</h2>
+    <ol>
+        <li id="yazi1">Öncelikle ayarlar buttonuna tıklarım.</li>
+        <li id="yazi1">Daha sonra  arka plan rengi için seçenekleri göster kısmına tıklarımı .</li>
+        <li id="yazi1">Arka plan rengi içinse arka plan rengi seçenenğini tıklarım.</li>
+    </ol>
+
+</div>
+<div id="premium">
+    <p>Eğer LİVEWORLD premium paketi alırsan yanında NETFLİX,YOUTUBE ve aynı zamanda spotify permium paket alabilirsin</p>
+    <div id="yt">
+        <a href="https://www.youtube.com/">
+           <h2>LİVEWORLD + yt</h2>
+        </a>
+    </div>
+    <div id="sptfy">
+        <a href="https://open.spotify.com/intl-tr">
+             <h2>spotify + LİVEWORLD</h2>
+        </a>
+    </div>
+    <a href="https://www.netflix.com/tr/">
+        <div id="ntflx">
+            <h2>NETFLİX + LİVEWORLD</h2>
+        </div>
+    </a>
+    </div>
+      <h2 id="yz">tarifeyi görmek için tıklayın</h2>
+</div>
+
+<div id="kimlik" style="display: none;">
+    <form action="">
+        <input type="text" placeholder="adınızı girin" id="isim">
+
+        <input type="text" placeholder="yaşınız" id="yaş">
+
+        <button id="veri_göster" type="button">göster</button>
+        <p id="kulanici_veri"></p> 
+        <button id="kaydet2" title="kaydetmek için dokun" type="button">kaydet</button>
+    </form>
+</div>
+  <button id="veri_kapat">kulolanıcı kimliğini kapatmak için </button>
+   <button id="veri_aç" type="button">kullanici kimliğini aç </button>
+
+
+<body>
+    <img src="c:\Users\PC\Downloads\pexels-olly-927022.jpg" alt="LİVEWORLD il eher şe ydaha kolay " class="resim">
+    <style>
+        .resim{
+            height: 500px;
+            width: 700px;
+            border: solid black 2px;
+            border-radius: 15px;
+        }
+        #yz1{
+           display: flex;
+           justify-content: center;
+           align-items: center;
+
+        }
+        #ayarlar_butonu{
+            background-color: #FFEFFF;
+            color:black;
+            float: right;
+            margin-right: 11px;
+            border:1px black solid;
+            padding: 5px;
+            margin-bottom: 11px;
+            height: 35px;
+            border-radius: 7px;
+        }
+        #veri_aç{
+            background-color: #FFEFFF;
+            color:black;
+            border:black 2px solid;
+            border-radius: 5px;
+            float: right;
+            margin-left: 7px;
+            margin-left: 8px;
+        }
+        #veri_aç :hover{
+            background-color: white;
+        }
+        #veri_kapat{
+            background-color: #FFEFFF;
+            color: black;
+            border:black 2px solid;
+            border-radius: 5px;
+            float: right;
+            margin-left: 8px;
+         }
+        #isim{
+            background-color: black;
+            color:black;
+            border-radius: 15px;
+            height: 45px;
+            width: 100px;
+            border:2px black solid;
+        }
+        #isim :hover{
+            background-color: white;
+            color: black;
+            border: white 2px solid;
+        }
+        #yaş{
+            background-color: black;
+            color:white;
+            height: 45px;
+            width: 100px;
+            border-radius: 15px;
+            border:2px black solid;
+        }
+        #isim :hover{
+            background-color: #FFEFFF;
+            color: black;
+            border:white 2px solid;
+        }
+        #kimlik{
+            border-radius: 15px;
+            border:2px black solid;
+            background-color: #61EFFF;
+
+
+        }
+        #ntflx{
+            background-color: red;
+            color: white;
+            border-radius: 15px;
+            border:2px black solid;
+            height:80px;
+            width: 150px;
+            font-size: medium;
+            font-family: monospace;
+            margin-top: 4px;
+
+        }
+        #sptfy{
+            background-color: green;
+            color: black;
+            border-radius: 15px;
+            border:2px black solid;
+            font-size: medium;
+            font-family: monospace;
+            height: 80px;
+            width: 150px;
+            margin-left: 10px;
+            margin-top: 7px;
+            margin-right: 4px;
+            
+        }
+        #yt{
+            padding: 5px;
+            border-radius: 15px;
+            background-color: red;
+            color: whitesmoke;
+            border:2px black solid;
+            height: 80px;
+            width: 150px;
+            border:2px black solid;
+            font-size: medium;
+            font-family: monospace;
+        }
+       #premium { 
+    background-color: #FFFEFF;
+    color: black;
+    border-radius: 15px;
+    border: 3px black solid;
+    height: 200px;
+    width: 680px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+    margin-top: 40px; /* burayı artır, mesela 40px */
+}
+        #yazi1{
+            font-family: 'Times New Roman', Times, serif;
+
+        }
+
+        #alan{
+            border-radius: 8px;
+            border:2px black solid;
+            background-color: #00B0BD;
+            color:black;
+            height:185px;
+            width: 400px;
+            margin-top: 15px;
+            float: right;
+            right:10px;
+            margin-top: 35px;
+            margin-bottom: 15px;
+            font-size: medium;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+
+        }
+        #yazi{
+            font-family: monospace;
+        }
+        #ayar_butonu{
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            background-color: #FFEFFF;
+        
+        }
+        #ayar_butonu button{
+            display: block;
+            width: 150px;
+        }
+
+        .ürn_kaydetme{
+            background-color: #FFEFFF;
+            left: 5px;
+            margin-top: 17px;
+            border-radius: 15px;
+            height: 55px;
+            width: 180px;
+         }
+        .renk{
+            background-color: #FFEFFF;
+            color: whitesmoke;
+            border-radius: 15px;
+            height: 55px;
+            width: 150px;
+        }
+        html{
+            background-color:  #1A2E40;
+            color: #ffffff;
+       }
+       #btn{
+        position: fixed;
+        width: 100%;
+        background-color: #ffffff;
+        height: 85px;
+        left: 0px;
+        top: 0px;
+        z-index: 1000;
+        padding: 12px,16px;
+        box-shadow: 0 2px 8px rgba( 0,0,0,0.12);
+        margin-bottom: 15px;
+       }
+       body{padding-top: 50px;}
+       #rnm{
+        background-color: purple;
+        color: aqua;
+        border-radius: 100px;
+        border: 2px black solid;
+        float: right;
+        margin-right: 7px;
+        height: 50px;
+        width: 60px;
+       }
+    </style>
+    <script>
+        document.getElementById("veri_aç").addEventListener("click",function(){
+         document.getElementById("kimlik").style.display = "block";     
+           });
+           document.getElementById("veri_kapat").addEventListener("click",function(){
+         document.getElementById("kimlik").style.display = "none" ; 
+           })
+
+        document.getElementById("kaydet2").addEventListener("click",function(){
+          let veri = document.getElementById("kulanici_veri").textContent
+          localStorage.setItem("kulanici_veri",veri);
+            alert("not kaydediliyor");
+        });
+        window.onload = function(){
+          let veri = localStorage.getItem("kulanici_veri")
+          if(veri){ 
+            document.getElementById("kulanici_veri").textContent = veri;
+          }
+
+          };
+        document.getElementById("ayarlar_butonu").addEventListener("click",function(){
+            let btnlr = document.getElementById("ayar_butonu")
+
+            if(btnlr.style.display === "none"){;  
+            btnlr.style.display = "block";
+            this.textContent = "seçenekleri sakla";
+            } else {
+                btnlr.style.display = " none";
+                this.textContent = "seçenekleri göster" ;
+            }
+            });
+               let yaş = "";
+              let isim = "";
+              document.getElementById("veri_göster").addEventListener("click",function(event){
+               let yaş = document.getElementById("yaş").value;
+               let isim = document.getElementById("isim").value;
+               document.getElementById("kulanici_veri").textContent = `szin adınız${isim} yaşınız ${yaş}  `;          
+             });
+    </script>
+     
+</body>
+<table>
+
+</table>
+</html>
