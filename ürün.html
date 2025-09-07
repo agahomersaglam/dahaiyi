@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="ürünadi">ürünün adı</label>
+    <input type="text " id="ürünadi">
+
+    <label for="ürünfiyati">ürününü fiyatı</label>
+    <input type="text" id="ürünfiyati">
+
+    <label for="ürünkar">tek ürnden gelen kar</label>
+    <input type="text" id="ürünkar">
+
+
+    <table id="ürün_tablo">
+        <thead>
+            <tr>
+                <th>ürün adı</th>
+                <th>ürün fiyatı</th>
+                <th>kar oranı</th>
+        </thead>
+        <tbody></tbody>
+    </table>
+    
+        <button id="ürün_tablosu" type="button"> ürün tablosu</button>
+    <script>
+        document.addEventListener("DOMContentLoaded",function(){})
+        document.getElementById("ürün_tablosu").addEventListener("click",function(){
+
+        
+           const ürün = document.getElementById("ürünadi").value;
+            const fiyat = document.getElementById("ürünfiyati").value;
+            const kar  = document.getElementById("ürünkar").value;
+
+            const tablo = document.getElementById("ürün_tablo").getElementsByTagName("tbody")[0];
+            const satir = tablo.insertRow();
+            const satir1 = satir.insertCell(0);
+            const satir2 = satir.insertCell(1);
+            const satir3 = satir.insertCell(2);
+
+            satir1.innerHTML = ürün;
+            satir2.innerHTML = fiyat;
+            satir3.innerHTML = kar;
+
+            document.getElementById("ürünadi").value = "";
+            document.getElementById("ürünfiyati").value = "";
+            document.getElementById("ürünkar").value = "";
+             });
+    </script>
+
+    
+    <style>
+        html{
+            background-color: #0B9E81;
+        }
+        #kontrol{
+            background-color: #D7C5A7;
+            color: black;
+            height: 85px;
+            top: 0px;
+            right: 0px;
+            left: 0px;
+            border-radius: 15px;
+            border: solid black 4px;
+        }
+         #ürünadi{
+            background-color: #D7C5A7;
+            color: black;
+            border-radius: 15px;
+            height: 45px;
+            width: 100px;
+         }
+         #ürünfiyati{
+            background-color: #D7C5A7;
+            color: black;
+            border-radius: 15px;
+            height: 45px;
+            width: 100px;
+         }
+         #ürünkar{  
+             background-color: #D7C5A7;
+            color: black;
+            border-radius: 15px;
+            height: 45px;
+            width: 100px; 
+         }
+    </style>
+</body>
+</html>
